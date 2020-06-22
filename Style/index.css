@@ -1,0 +1,119 @@
+*{
+    box-sizing:border box;
+    margin:0;
+    max-width:100% ;
+    /* border:1px solid grey; */
+}
+
+html{
+    font-size:62.5%;
+    margin: 2%;
+    
+}
+body {
+    background-color:white;
+    font-family: 'Montserrat', sans-serif;;
+}
+h1{
+    width:20%;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+}
+.nav {
+    display:flex;
+    height: 100px;
+    width: 100%;
+    align-items: baseline;
+
+}
+.nav nav{
+    width: 30%;
+    display:flex;
+    justify-content: space-around;
+    
+}
+.nav a{
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: black;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    width:50%;
+}
+
+.button a{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: black;
+    padding:1%;
+    margin: 1%;
+}
+
+
+.banner {
+    height: 50vh;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.motto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 7rem;
+}
+.banner img{
+    object-fit: cover;
+    width: 100vw;
+    height: 70vh;
+    object-position: 30% 70%;
+}
+
+.top, .middle, .bottom {
+    height: 400px;
+    display:flex;    
+    border-style:5px dashed grey;
+}
+
+.photo{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    justify-content: space-around;
+    
+}
+
+.sectionTitle {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size:5rem;
+    padding: 5%
+}
+
+img{
+    width: 60%;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+li{
+    width: 100%;
+    font-size: 1.8rem;
+  
+}
+
+/* about page */
