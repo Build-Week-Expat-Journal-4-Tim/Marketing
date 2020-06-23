@@ -281,6 +281,41 @@ span{
     color:white
 }
 
+/* dashboard page */
+.photoEntry{
+    width: 20%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+    justify-content: center;
+    padding:3%;
+    margin: 3%;
+    border: 1px dotted grey;
+}
+.photoEntry img{  
+    height: 100%;
+    width: auto;
+    border: none;
+}
+.photoEntry h2{
+    border:none;
+    padding:2%;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.photoEntry h3{
+    border:none;
+    padding:2%;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.dashboard{
+    display: flex;
+    flex-wrap: wrap;
+}
 /* Media Queries */
 
 @media(max-width:500px){
