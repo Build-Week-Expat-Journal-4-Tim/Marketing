@@ -2,7 +2,7 @@
     box-sizing:border box;
     margin:0;
     max-width:100% ;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 
 html{
@@ -15,7 +15,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 h1{
-    width:40%;
+    width:45%;
     font-size: 5rem;
     text-transform: uppercase;
     font-family: 'Permanent Marker', cursive;
@@ -179,7 +179,100 @@ span{
 }
 /* about page */
 
+.bioImg{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 300px;
+    height: 337px;
+    padding: 2%;
+}
+#teamBios{
+    margin: 4%;
 
+}
+#teamBios h2{
+    height: 80px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
+#teamBios h3{
+    height: 50px;
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 1%
+}
+#teamBios h4{
+    height: auto;
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin: 1%
+}
+.headshot{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    width:20%
+}
+
+#bioIndividualAri{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin:2% 0;
+    padding:3%;
+}
+#bioIndividualChris{
+    display:flex;
+    justify-content: center;
+    margin:2% 0;
+}
+
+#bioIndividualJonathan{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin:2% 0;
+}
+#bioIndividualCameron{
+    display:flex;
+    justify-content: center;
+    margin:2% 0;
+}
+#bioIndividualTiffany{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin:2% 0;
+}
+
+#bioIndividualTim{
+    display:flex;
+    justify-content: center;
+    margin:2% 0;
+}
+
+
+.nameInfo{
+    width:30%;
+    margin:3%
+}
+
+.bannerAbout {
+    color: black;
+    text-align: center;
+    margin: 5%;
+    padding:5%;
+
+}
+.mottoAbout {
+    text-transform: uppercase;
+    font-size: 4rem;
+    background-color:white;
+}
 
 /* Media Queries */
 
