@@ -2,61 +2,97 @@
     box-sizing:border box;
     margin:0;
     max-width:100% ;
-    /* border:1px solid grey; */
+    border:1px solid grey;
 }
 
 html{
     font-size:62.5%;
-    margin: 2%;
+    margin: 4%;
     
 }
 body {
     background-color:white;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
 h1{
-    width:20%;
+    width:40%;
     font-size: 5rem;
     text-transform: uppercase;
     font-family: 'Permanent Marker', cursive;
+    padding:2%;
 }
-.nav {
+.navBar {
     display:flex;
-    height: 100px;
-    width: 100%;
-    align-items: baseline;
+}
+#leftNav{
+    width:50%;
+    display:flex;
 
 }
-.nav nav{
-    width: 30%;
+.navBar nav{
+    width: 50%;
     display:flex;
     justify-content: space-around;
-    
+    align-items: center;
 }
-.nav a{
+.navBar a{
     text-decoration: none;
     font-size: 2.3rem;
     color: black;
 }
-.button{
-    display: flex;
-    justify-content: flex-end;
+
+#rightNav{
     width:50%;
-}
-
-.button a{
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    border-radius: 12px;
-    background-color: black;
+    display:flex;
+    justify-content: flex-end;
     padding:1%;
-    margin: 1%;
 }
 
+
+.signIn{
+    width:25%;
+}
+
+.signIn a{
+    padding:1%;
+}
+
+.signIn button{
+    width: 100%;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    background-color:black;
+    padding:10%;
+    border-radius: 65px;
+    
+}
+.signIn button:hover{
+    transition-duration: 0.4s;
+    background-color: white;
+    color:black;
+}
+#logIn{
+    widows: 32px;
+    margin:20px
+}
+#logIn button{
+    width: 100%;
+    border: none;
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    background-color: white;
+}
+#logIn button:hover{
+    color:burlywood
+}
 
 .banner {
-    height: 50vh;
+    height: 80vh;
     position: relative;
     text-align: center;
     color: white;
@@ -72,8 +108,9 @@ h1{
 .banner img{
     object-fit: cover;
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     object-position: 30% 70%;
+    margin-bottom: 5%;
 }
 
 .top, .middle, .bottom {
@@ -96,7 +133,7 @@ h1{
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     font-size:5rem;
-    padding: 5%
+    padding: 5%;
 }
 
 img{
@@ -104,16 +141,97 @@ img{
 }
 
 
-ul{
+.bottom{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    text-align: center;
 }
-li{
-    width: 100%;
-    font-size: 1.8rem;
+.bottom h3{
+    font-size: 2.6rem;
+    padding: 1%;
   
 }
 
+footer {
+    background-color:black;
+    height: 20vh;
+    width:100vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+span{
+    font-size: 5em;
+    color:white;
+    width:5%;
+}
+.social{
+    display: flex;
+    flex-flow: row;
+    width:50%;
+    justify-content: center;
+    justify-content: space-around;
+    padding:2% 2%;
+}
 /* about page */
+
+
+
+/* Media Queries */
+
+@media(max-width:500px){
+
+    h1{
+        text-align: center;
+        width:95%;
+        
+    }
+    nav {
+        flex-direction:column;
+        align-items: center;
+    } 
+
+    #leftNav{
+        display: flex;
+        flex-direction: column;
+        width:90vw;
+        align-items: center;
+
+    }
+    #rightNav{
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        align-items: center;
+    }
+    .navBar {
+        flex-direction:column;
+        height:45vh;
+        width:90vw;
+    } 
+    .signIn{
+        width:60vw;
+    }
+
+    .motto{
+        font-size: 4rem;
+        position: absolute;
+        top: 70%;
+        left: 70%;
+    }
+    .sectionTitle {
+        font-size: 3rem;
+        display:flex;
+        flex-direction: column;
+}
+.top, .middle, .bottom {
+    flex-direction: column;
+    justify-content: space-around;
+    height:100vh;
+    }
+    
+}
