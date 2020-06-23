@@ -23,17 +23,19 @@ h1{
 }
 .navBar {
     display:flex;
+    /* background-color: red; */
 }
 #leftNav{
     width:50%;
     display:flex;
-
+    /* background-color: red; */
 }
 .navBar nav{
     width: 50%;
     display:flex;
     justify-content: space-around;
     align-items: center;
+    /* background-color: yellowgreen; */
 }
 .navBar a{
     text-decoration: none;
@@ -104,6 +106,7 @@ h1{
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-size: 7rem;
+    /* background-color: red; */
 }
 .banner img{
     object-fit: cover;
@@ -184,17 +187,18 @@ span{
     object-fit: cover;
     width: 300px;
     height: 337px;
-    padding: 2%;
 }
 #teamBios{
     margin: 4%;
-
 }
 #teamBios h2{
     height: 80px;
     font-family: 'Permanent Marker', cursive;
     font-size: 4rem;
     text-align: center;
+    padding:1%;
+    border-bottom: 2px dashed black;
+    border-top: 2px dashed black;
 }
 #teamBios h3{
     height: 50px;
@@ -209,13 +213,14 @@ span{
     width: auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    margin: 1%
+    margin: 1%;
 }
 .headshot{
     width: 50vw;
     display: flex;
     justify-content: center;
-    width:20%
+    width:20%;
+    
 }
 
 #bioIndividualAri{
@@ -262,16 +267,16 @@ span{
 }
 
 .bannerAbout {
-    color: black;
     text-align: center;
     margin: 5%;
     padding:5%;
+    background-color:black;
 
 }
 .mottoAbout {
     text-transform: uppercase;
     font-size: 4rem;
-    background-color:white;
+    color:white
 }
 
 /* Media Queries */
@@ -303,7 +308,7 @@ span{
     }
     .navBar {
         flex-direction:column;
-        height:45vh;
+        height:50vh;
         width:90vw;
     } 
     .signIn{
@@ -312,19 +317,124 @@ span{
 
     .motto{
         font-size: 4rem;
+        width:95%;
         position: absolute;
         top: 70%;
-        left: 70%;
+        left: 50%;
     }
     .sectionTitle {
         font-size: 3rem;
         display:flex;
         flex-direction: column;
-}
-.top, .middle, .bottom {
-    flex-direction: column;
-    justify-content: space-around;
-    height:100vh;
     }
-    
+    .top, .middle, .bottom {
+        flex-direction: column;
+        justify-content: space-around;
+        height:100vh;
+    }
+    .container{
+        width:70vw;
+        padding:2% 2%;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner {
+        height: 80vh;
+    }
+    .banner img{
+        height: 80vh;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+    span{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:800px){
+    h1{
+        text-align: center;
+        width:95%;
+    }
+    nav {
+        flex-direction:column;
+        align-items: center;
+    } 
+
+    #leftNav{
+        display: flex;
+        flex-direction: column;
+        width:90vw;
+        align-items: center;
+
+    }
+    #rightNav{
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        align-items: center;
+    }
+    .navBar {
+        flex-direction:column;
+        height:50vh;
+        width:90vw;
+    } 
+    .signIn{
+        width:60vw;
+    }
+    .motto{
+        font-size: 5rem;
+        width:95%;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+    }
+    .sectionTitle {
+        font-size: 3rem;
+        display:flex;
+        flex-direction: column;
+    }
+    .top, .middle, .bottom {
+        flex-direction: column;
+        justify-content: space-around;
+        height:100vh;
+    }
+    .container{
+        width:70vw;
+        padding:2% 2%;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner {
+        height: 70vh;
+    }
+    .banner img{
+        height: 70vh;
+    }
+}
+
+@media(max-width:1700px){
+    #leftNav{
+        flex-direction: column;
+    }
+    h1{
+    width:95%;
+    }
+    .navBar nav{
+        width:95%;
+    }
+    .motto {
+        width:95%;
+        position: absolute;
+            top: 70%;
+            left: 50%;
+    }
 }
