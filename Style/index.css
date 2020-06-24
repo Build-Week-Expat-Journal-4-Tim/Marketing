@@ -8,8 +8,8 @@
 html{
     font-size:62.5%;
     margin: 4%;
-    
 }
+
 body {
     background-color:white;
     font-family: 'Montserrat', sans-serif;
@@ -23,7 +23,7 @@ h1{
 }
 .navBar {
     display:flex;
-    /* background-color: red; */
+
 }
 #leftNav{
     width:50%;
@@ -35,6 +35,7 @@ h1{
     display:flex;
     justify-content: space-around;
     align-items: center;
+    padding:1%;
     /* background-color: yellowgreen; */
 }
 .navBar a{
@@ -50,9 +51,11 @@ h1{
     padding:1%;
 }
 
-
 .signIn{
-    width:25%;
+    width:40%;
+    height:auto;
+    display: flex;
+    align-items: center;
 }
 
 .signIn a{
@@ -69,16 +72,18 @@ h1{
     background-color:black;
     padding:10%;
     border-radius: 65px;
-    
 }
+
 .signIn button:hover{
     transition-duration: 0.4s;
     background-color: white;
     color:black;
 }
 #logIn{
-    widows: 32px;
-    margin:20px
+    widows:32px;
+    margin:20px;
+    display: flex;
+    align-items: center;
 }
 #logIn button{
     width: 100%;
@@ -105,8 +110,7 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-    font-size: 7rem;
-    /* background-color: red; */
+    font-size: 5rem;
 }
 .banner img{
     object-fit: cover;
@@ -123,21 +127,23 @@ h1{
 
 .photo{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
     justify-content: space-around;
     padding: 2%;
 }
-.photo h3{
+.sectionText{
     padding:2%;
     margin: 2%;
+    font-size: 1.5rem;
+    text-align:center;
 }
 .sectionTitle {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-    font-size:5rem;
+    font-size:4rem;
     padding: 1% 5% 0% 5%;
     border-top: 3px dashed grey;
 }
@@ -146,18 +152,46 @@ img{
     width: 60%;
 }
 
-
 .bottom{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 80%;
     text-align: center;
+    height: auto;
 }
 .bottom h3{
-    font-size: 2.6rem;
-    padding: 1%;  
+    padding: 1%; 
+    margin:0; 
+}
+
+.individualTest img{
+    object-fit: cover;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+#testimonials{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.individualTest{
+    border: 3px solid black;
+    box-shadow: 5px 10px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2%;
+    margin:2%;
+    width: 20%;
+    height: auto;
+}
+
+.individualTest h3{
+    margin:2%;
+}
+
+.individualTest:hover{
+    box-shadow: 5px 10px black;
 }
 
 footer {
@@ -188,8 +222,8 @@ span{
 .bioImg{
     border-radius: 50%;
     object-fit: cover;
-    width: 300px;
-    height: 337px;
+    width: 40vh;
+    height: 40vh;
 }
 #teamBios{
     margin: 4%;
@@ -204,8 +238,8 @@ span{
     border-top: 2px dashed black;
 }
 #teamBios h3{
-    height: 50px;
-    width: auto;
+    height: auto;
+    width: auto;    
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
@@ -225,47 +259,19 @@ span{
     width:20%;
 }
 
-#bioIndividualAri{
-    display:flex;
-    flex-direction: row-reverse;
+.bioIndividual{
+    display: flex;
     justify-content: center;
     margin:2% 0;
-    padding:3%;
-}
-#bioIndividualChris{
-    display:flex;
-    justify-content: center;
-    margin:2% 0;
-}
+    padding: 2%;
+    border: 3px solid black;
+    box-shadow: 5px 10px grey;
 
-#bioIndividualJonathan{
-    display:flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin:2% 0;
-}
-#bioIndividualCameron{
-    display:flex;
-    justify-content: center;
-    margin:2% 0;
-}
-#bioIndividualTiffany{
-    display:flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin:2% 0;
-}
-
-#bioIndividualTim{
-    display:flex;
-    justify-content: center;
-    margin:2% 0;
 }
 
 
-.nameInfo{
-    width:30%;
-    margin:3%
+.nameInfo h3{
+    height:auto;
 }
 
 .bannerAbout {
@@ -284,17 +290,21 @@ span{
 /* dashboard page */
 .photoEntry{
     width: 20%;
-    height: 400px;
+    height: 50vh;
     display: flex;
     flex-direction: column;
-   text-align: center;
+    text-align: center;
     justify-content: center;
     padding:3%;
     margin: 3%;
     border: 1px dotted grey;
+    box-shadow: 5px 10px grey;
+}
+.photoEntry:hover{
+    box-shadow: 5px 10px black;
 }
 .photoEntry img{  
-    height: 100%;
+    height: 90%;
     width: auto;
     border: none;
 }
@@ -324,9 +334,11 @@ span{
         text-align: center;
         width:95%;
     }
-    nav {
+    .navBar {
         flex-direction:column;
         align-items: center;
+        height:80vh;
+   
     } 
 
     #leftNav{
@@ -346,6 +358,10 @@ span{
         flex-direction:column;
         height:50vh;
         width:90vw;
+    } 
+    nav {
+        flex-direction:column;
+        align-items: center;
     } 
     .signIn{
         width:60vw;
@@ -393,6 +409,9 @@ span{
     span{
         font-size: 3rem;
     }
+   .individualTest{
+       width:30%;
+   }
     /* about page */
     
     #bioIndividualAri{
@@ -413,46 +432,59 @@ span{
     #bioIndividualTim{
         flex-direction:column;
     }
-    .nameInfo{
-        width:100%;
-        margin:3%
-    }
+
     .headshot{
         width:100%;
     }
-
+    /* dashboard page 500 */
+ 
+    .dashboard{
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .photoEntry{
+        width:70vw;
+        height:70vh;
+        display: flex;
+        align-items: center;
+    }
+    .photoEntry img{
+        width:80%;
+        height:80%;
+    }
 }
+
 
 @media(max-width:800px){
     h1{
         text-align: center;
         width:95%;
     }
-    nav {
-        flex-direction:column;
-        align-items: center;
-    } 
-
+  
     #leftNav{
         display: flex;
         flex-direction: column;
-        width:90vw;
+        width:auto;
         align-items: center;
-
     }
+
     #rightNav{
         display: flex;
         flex-direction: column;
-        width:100vw;
-        align-items: center;
+        width:auto;
     }
     .navBar {
         flex-direction:column;
-        height:50vh;
-        width:90vw;
+        height:auto;
+        width:auto;
     } 
+    #logIn{
+        justify-content: center;
+    }
     .signIn{
-        width:60vw;
+        width:100%;
+        justify-content: center;
     }
     .motto{
         font-size: 5rem;
@@ -493,7 +525,7 @@ span{
     }
       /* about page */
     
-      #bioIndividualAri{
+    #bioIndividualAri{
         flex-direction:column;
     }
     #bioIndividualChris{
@@ -515,8 +547,25 @@ span{
         width:100%;
         margin:3%
     }
-    .headshot{
-        width:100%;
+    .bioImg{
+        height:40%;
+        width:40%;
+    }
+/* dashboard page 800 */
+    .dashboard{
+        justify-content: center;
+    }
+    .photoEntry{
+        width: 30%;
+    }
+    .photoEntry img{
+        height: 70%;
+    }
+    .photoEntry h2{
+        font-size: 1.5rem;
+    }
+    .photoEntry h3{
+        font-size: 1rem;
     }
 
 }
@@ -544,4 +593,6 @@ span{
     .headshot{
         width:90%;
     }
+    /* dashboard page */
+
 }
