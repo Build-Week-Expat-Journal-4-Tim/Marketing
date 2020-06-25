@@ -93,7 +93,7 @@ h1{
     background-color: white;
 }
 #logIn button:hover{
-    color:burlywood
+    color: silver
 }
 
 .banner {
@@ -140,7 +140,7 @@ h1{
     font-family: 'Permanent Marker', cursive;
     font-size:3rem;
     padding: 1% 5%;
-    border-top: 3px dashed grey;
+    border-top: 3px dashed silver;
 }
 
 .bottom{
@@ -167,7 +167,7 @@ h1{
 }
 .individualTest{
     border: 3px solid black;
-    box-shadow: 5px 10px grey;
+    box-shadow: 5px 10px silver;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,7 +259,7 @@ span{
     margin:2% 0;
     padding: 2%;
     border: 3px solid black;
-    box-shadow: 5px 10px grey;
+    box-shadow: 5px 10px silver;
 
 }
 .nameInfo h3{
@@ -275,7 +275,7 @@ span{
 .mottoAbout {
     text-transform: uppercase;
     font-size: 4rem;
-    color:white
+    color:white;
 }
 
 /* dashboard page */
@@ -291,8 +291,8 @@ span{
     justify-content: center;
     padding:3%;
     margin: 3%;
-    border: 1px dotted grey;
-    box-shadow: 5px 10px grey;
+    border: 1px dotted silver;
+    box-shadow: 5px 10px silver;
 }
 .photoEntry:hover{
     box-shadow: 5px 10px black;
