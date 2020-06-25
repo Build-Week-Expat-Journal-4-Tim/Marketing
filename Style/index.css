@@ -28,7 +28,6 @@ h1{
 #leftNav{
     width:50%;
     display:flex;
-    /* background-color: red; */
 }
 .navBar nav{
     width: 50%;
@@ -36,7 +35,6 @@ h1{
     justify-content: space-around;
     align-items: center;
     padding:1%;
-    /* background-color: yellowgreen; */
 }
 .navBar a{
     text-decoration: none;
@@ -103,6 +101,7 @@ h1{
     position: relative;
     text-align: center;
     color: white;
+    margin-bottom: 2%;
 }
 .motto {
     position: absolute;
@@ -110,46 +109,38 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-    font-size: 5rem;
 }
 .banner img{
     object-fit: cover;
     width: 100vw;
     height: 80vh;
     object-position: 30% 70%;
-    margin-bottom: 5%;
 }
 
-.top, .middle, .bottom {
-    height: 300px;
+.top, .middle{
+    height: auto;
     display:flex;    
 }
-
 .photo{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
     justify-content: space-around;
     padding: 2%;
 }
 .sectionText{
     padding:2%;
     margin: 2%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align:center;
 }
-.sectionTitle {
+.sectionTitle{ 
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-    font-size:4rem;
-    padding: 1% 5% 0% 5%;
+    font-size:3rem;
+    padding: 1% 5%;
     border-top: 3px dashed grey;
-}
-
-img{
-    width: 60%;
 }
 
 .bottom{
@@ -233,9 +224,12 @@ span{
     font-family: 'Permanent Marker', cursive;
     font-size: 4rem;
     text-align: center;
-    padding:1%;
+    padding:6% 1% 2% 1%;
     border-bottom: 2px dashed black;
     border-top: 2px dashed black;
+    display: flex;
+    justify-content: center;
+    margin: 2%;
 }
 #teamBios h3{
     height: auto;
@@ -268,8 +262,6 @@ span{
     box-shadow: 5px 10px grey;
 
 }
-
-
 .nameInfo h3{
     height:auto;
 }
@@ -279,7 +271,6 @@ span{
     margin: 5%;
     padding:5%;
     background-color:black;
-
 }
 .mottoAbout {
     text-transform: uppercase;
@@ -288,9 +279,12 @@ span{
 }
 
 /* dashboard page */
+.dashboard{
+    display: flex;
+    flex-wrap: wrap;
+}
 .photoEntry{
-    width: 20%;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -311,21 +305,16 @@ span{
 .photoEntry h2{
     border:none;
     padding:2%;
-    font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
 .photoEntry h3{
     border:none;
     padding:2%;
-    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
-.dashboard{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 /* Media Queries */
 
 @media(max-width:500px){
@@ -334,19 +323,19 @@ span{
         text-align: center;
         width:95%;
     }
+    .banner .motto {
+        font-size: 3.5rem;
+    }
     .navBar {
         flex-direction:column;
         align-items: center;
         height:80vh;
-   
     } 
-
     #leftNav{
         display: flex;
         flex-direction: column;
         width:90vw;
         align-items: center;
-
     }
     #rightNav{
         display: flex;
@@ -366,70 +355,56 @@ span{
     .signIn{
         width:60vw;
     }
-
-    .motto{
-        font-size: 4rem;
-        width:95%;
-        position: absolute;
-        top: 70%;
-        left: 50%;
-    }
-    .sectionTitle {
-        font-size: 3rem;
-        display:flex;
-        flex-direction: column;
-    }
-    .top, .middle, .bottom {
-        justify-content: space-around;
-        height:100vh;
-    }
-    .photo{
+    .top {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top .photo{
+        width: 80%;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .middle .photo{
+        width: 80%;
+    }
+    .container .sectionTitle{
+        font-size: 3rem;
     }
     .container{
         width:70vw;
         padding:2% 2%;
+        align-content: center;
+        margin: 4% 0;
     }
-    .main{
+    .containerTwo{
         display: flex;
         justify-content: center;
+        margin:5%;
     }
-
-    .banner {
-        height: 80vh;
+    .containerTwo .sectionTitle{
+        font-size: 3rem;
     }
     .banner img{
-        height: 80vh;
+        height:95vh;
+        
     }
-
+    .banner {
+        height:95vh;
+    }
     footer {
         justify-content: space-around;
     }
-    span{
-        font-size: 3rem;
-    }
+
    .individualTest{
-       width:30%;
+       width:50%;
    }
     /* about page */
     
-    #bioIndividualAri{
-        flex-direction:column;
-    }
-    #bioIndividualChris{
-        flex-direction:column;
-    }
-    #bioIndividualJonathan{
-        flex-direction:column;
-    }
-    #bioIndividualTiffany{
-        flex-direction:column;
-    }
-    #bioIndividualCameron{
-        flex-direction:column;
-    }
-    #bioIndividualTim{
+    .bioIndividual{
         flex-direction:column;
     }
 
@@ -437,21 +412,13 @@ span{
         width:100%;
     }
     /* dashboard page 500 */
- 
     .dashboard{
-        display:flex;
         flex-direction: column;
-        align-content: center;
-    }
-    .photoEntry{
-        width:70vw;
-        height:70vh;
-        display: flex;
         align-items: center;
     }
-    .photoEntry img{
-        width:80%;
-        height:80%;
+    .photoEntry{
+        width:55vw;
+        margin: 5%;
     }
 }
 
@@ -486,23 +453,15 @@ span{
         width:100%;
         justify-content: center;
     }
-    .motto{
-        font-size: 5rem;
-        width:95%;
-        position: absolute;
-        top: 70%;
-        left: 50%;
+    .banner .motto {
+        font-size: 4rem;
     }
     .sectionTitle {
         font-size: 4rem;
         display:flex;
         flex-direction: column;
     }
-    .top, .middle, .bottom {
-        flex-direction: column;
-        justify-content: space-around;
-        height:100vh;
-    }
+    
     .container{
         width:70vw;
         padding:2% 2%;
@@ -511,7 +470,7 @@ span{
         display: flex;
         justify-content: center;
     }
-
+  
     .banner {
         height: 70vh;
     }
@@ -521,53 +480,25 @@ span{
     .bottom{
         display: flex;
         justify-content: start;
-        height: 40%;
     }
       /* about page */
     
-    #bioIndividualAri{
-        flex-direction:column;
-    }
-    #bioIndividualChris{
-        flex-direction:column;
-    }
-    #bioIndividualJonathan{
-        flex-direction:column;
-    }
-    #bioIndividualTiffany{
-        flex-direction:column;
-    }
-    #bioIndividualCameron{
-        flex-direction:column;
-    }
-    #bioIndividualTim{
+    .bioIndividual{
         flex-direction:column;
     }
     .nameInfo{
         width:100%;
-        margin:3%
+        margin:3%;
     }
     .bioImg{
         height:40%;
         width:40%;
     }
-/* dashboard page 800 */
+    /* dashboard page 800 */
     .dashboard{
         justify-content: center;
     }
-    .photoEntry{
-        width: 30%;
-    }
-    .photoEntry img{
-        height: 70%;
-    }
-    .photoEntry h2{
-        font-size: 1.5rem;
-    }
-    .photoEntry h3{
-        font-size: 1rem;
-    }
-
+    
 }
 
 @media(max-width:1700px){
@@ -583,8 +514,9 @@ span{
     .motto {
         width:95%;
         position: absolute;
-            top: 70%;
-            left: 50%;
+        top: 70%;
+        left: 50%;
+        font-size: 5rem;
     }
     .nameInfo{
         width:90%;
@@ -593,6 +525,9 @@ span{
     .headshot{
         width:90%;
     }
-    /* dashboard page */
+    /* dashboard page 1700 */
+    .dashboard{
+        justify-content: center;
+    }
 
 }
